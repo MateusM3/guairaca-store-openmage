@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Guairaca_Example>
+            <version>1.0.0</version>
+        </Guairaca_Example>
+    </modules>
+
+    <global>
+        <blocks>
+            <guairaca_example>
+                <class>Guairaca_Example_Block</class>
+            </guairaca_example>
+        </blocks>
+        <models>
+            <guairaca_example>
+                <class>Guairaca_Example_Model</class>
+            </guairaca_example>
+        </models>
+        <helpers>
+            <guairaca_example>
+                <class>Guairaca_Example_Helper</class>
+            </guairaca_example>
+        </helpers>
+        <events>
+            <catalog_product_save_after>
+                <observers>
+                    <guairaca_example_product_save_after>
+                        <class>guairaca_example/observer</class>
+                        <method>catalogProductSaveAfter</method>
+                    </guairaca_example_product_save_after>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+    </global>
+    <frontend>
+        <routers>
+            <guairaca_example>
+                <use>standard</use>
+                <args>
+                    <module>Guairaca_Example</module>
+                    <frontName>guairaca</frontName>
+                </args>
+            </guairaca_example>
+        </routers>
+    </frontend>
+</config>

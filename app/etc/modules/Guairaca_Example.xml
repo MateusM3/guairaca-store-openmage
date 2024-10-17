@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Guairaca_Example>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Guairaca_Example>
+    </modules>
+</config>
